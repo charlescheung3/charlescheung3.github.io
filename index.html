@@ -22,7 +22,7 @@
 
     <!-- Our title/subheading font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
 
     <!-- Our text font-->
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -34,9 +34,15 @@
         }
 
         .heading_format{
-            font-family: Oxanium, Georgia;
+            font-family: Manjari, Georgia;
             font-size: 30px;
             color: #800020
+        }
+
+        ol{
+            font-family: Rubik, Georgia;
+            font-size: 15px;
+            color: #1A237E;
         }
 
         p{
@@ -48,22 +54,42 @@
     </style>
 </head>
 
-<body>
+<body class="vsc-initialized">
     <h1 class="heading_format">CC's World</h1>
 
-    <p class="st">
-    Hello stranger, my name is Charles Cheung. I am currently studying computer science at Hunter College. 
-    If everything goes right, I should graduate around May 2022. This is my first attempt at a website, 
-    just looking to practically implement everything I've learned so far. Hope you enjoy your stay here :D
-</p>
+    <p>
+        Hello stranger, my name is Charles Cheung. I am currently studying computer science at Hunter College. 
+        If everything goes right, I should graduate around May 2022. This is my first attempt at a website, 
+        just looking to practically implement everything I've learned so far. Hope you enjoy your stay here :D
+    </p>
 
-<h2 class="heading_format">What we working towards:</h2>
+    <h2>Check your mood:</h2>
 
-<ol>
-    <li>money</li>
-    <li>yay</li>
-    <li>bad biddies</li>
-</ol>
+    <label for="Happy">
+        <input id="Happy" type="checkbox" name="mood"> Happy :)</label>
+    <label for="Sad Boi">
+        <input id="Sad Boi" type="checkbox" name="mood"> Sad Boi :( </label>
+    <label for="Mad">
+        <input id="Mad" type="checkbox" name="mood"> Mad >:( </label>
+    <label for="Scaredy Cat">
+        <input id="Scaredy Cat" type="checkbox" name="mood"> Scaredy Cat <:( </label>
+    <label for="Disgusted">
+        <input id="Disgusted" type="checkbox" name="mood"> Disgusted D:< </label>
+    <label for="Surprised-Pika.gif">
+        <input id="Surprised-Pika.gif" type="checkbox" name="mood"> D: </label>
+    
+
+    <h3 class="heading_format">What we working towards:</h3>
+
+    <ol>
+        <li>money</li>
+        <li>yay</li>
+        <li>bad biddies</li>
+    </ol>
+
+
+
+
 
 </body>
 </html>
