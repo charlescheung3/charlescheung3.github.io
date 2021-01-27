@@ -38,6 +38,10 @@
         body {
             background-image: url("https://i.pinimg.com/originals/a5/a5/60/a5a5602655c347b21309d81121e31ee0.jpg");
             background-color: #cccccc;
+            margin: 2em auto;
+            max-width: 1200px;
+            padding: 1em;
+            text-align: justify;
         }
 
         .heading_format{
@@ -50,6 +54,23 @@
             margin-left: auto;
             margin-right: auto;
             display: block;
+        }
+
+        .tleft{
+            float: left;
+            width: 50%;
+        }
+
+        .fancy_position:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .picture_left{
+            float: left;
+            overflow: hidden;
+            margin-right: 1em;
         }
 
         ol{
@@ -76,52 +97,55 @@
             color: #1A237E;
         }
 
-        input[type=checkbox]{
-            position: relative;
-            display: block;
-        }
-
         @media print {#ghostery-tracker-tally {display:none !important}}
 
     </style>
 </head>
 
 <body class="vsc-initialized">
-    
-    <figure class="center">
-        <img src="https://i.pinimg.com/originals/75/b6/c7/75b6c78c60c714b08f402c6b142e15cc.gif"
-        title="Electric Mouse" alt ="Zap Rat">
+    <div class="fancy_position">
+        <div class="picture_left">
+            <figure class="center">
+                <img src="https://i.pinimg.com/originals/75/b6/c7/75b6c78c60c714b08f402c6b142e15cc.gif"
+                title="Electric Mouse" alt ="Zap Rat">
 
-        <figcaption>
-            My favorite rat.
-        </figcaption>
-    </figure>
+                <figcaption>My favorite rat.</figcaption>
+            </figure>
+        </div>
 
-    <h1 class="heading_format">CC's World</h1>
-    
-    <p>
-        Hello stranger, my name is Charles Cheung. I am currently studying computer science at Hunter College. 
-        If everything goes right, I should graduate around May 2022. This is my first attempt at a website, 
-        just looking to practically implement everything I've learned so far. Hope you enjoy your stay here :D
-    </p>
+        <div class="tleft">
+            <h1 class="heading_format">CC's World</h1>
+                <p id="tleft">
+                    Hello stranger, my name is Charles Cheung. I am currently studying computer science at Hunter College. 
+                    If everything goes right, I should graduate around May 2022. This is my first attempt at a website, 
+                    just looking to practically implement everything I've learned so far. Hope you enjoy your stay here :D
+                </p>
+        </div>
 
+        <div class="tleft">
+             <h2 class="heading_format">Check your mood:</h2>
 
-    <h2 class="heading_format">Check your mood:</h2>
-
-    <form>
-        <label for="Happy">
-            <input id="Happy" type="checkbox" name="mood"> :)</label>
-        <label for="Sad Boi">
-            <input id="Sad Boi" type="checkbox" name="mood"> :( </label>
-        <label for="Mad">
-            <input id="Mad" type="checkbox" name="mood"> >:( </label>
-        <label for="Scaredy Cat">
-            <input id="Scaredy Cat" type="checkbox" name="mood"> <:( </label>
-        <label for="Disgusted">
-            <input id="Disgusted" type="checkbox" name="mood"> D:< </label>
-        <label for="Surprised-Pika.gif">
-            <input id="Surprised-Pika.gif" type="checkbox" name="mood"> D: </label>
+        <form>
+            <label for="Happy">
+                <input id="Happy" type="checkbox" name="mood"> :)</label>
+            <label for="Sad Boi">
+                <input id="Sad Boi" type="checkbox" name="mood"> :( </label>
+            <label for="Mad">
+                <input id="Mad" type="checkbox" name="mood"> >:( </label>
+            <label for="Scaredy Cat">
+                <input id="Scaredy Cat" type="checkbox" name="mood"> <:( </label>
+            <label for="Disgusted">
+                <input id="Disgusted" type="checkbox" name="mood"> D:< </label>
+            <label for="Surprised-Pika.gif">
+                <input id="Surprised-Pika.gif" type="checkbox" name="mood"> D: </label>
     </form>
+        </div>
+    </div>
+    
+
+    
+
+   
 
     <h3 class="heading_format">What we working towards:</h3>
 
